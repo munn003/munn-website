@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MUNN — Modern Skincare</title>
+<meta name="description" content="MUNN — a curated destination for authentic skincare and beauty essentials.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="announce">FREE SHIPPING ON ORDERS ABOVE ₹999 · COD AVAILABLE · 100% AUTHENTIC PRODUCTS</div>
+<header><div class="nav">
+<button class="hamb" onclick="toggleMobile()">☰</button><a class="logo" href="#/">MUNN</a>
+<nav id="nav"><a href="#/">Home</a><a href="#/shop">Shop</a><a href="#/shop?cat=Face">Face</a><a href="#/shop?cat=Sunscreen">Sunscreen</a><a href="#/shop?cat=Body">Body</a><a href="#/shop?cat=Offers">Offers</a></nav>
+<div class="actions"><button onclick="openSearch()">⌕</button><a href="#/wishlist">♡<b id="wishCount">0</b></a><button onclick="openCart()">🛍<b id="cartCount">0</b></button></div>
+</div></header>
+
+<div id="search" class="search"><div><input id="searchBox" oninput="liveSearch()" placeholder="Search skincare..."><button onclick="closeSearch()">✕</button></div><section id="searchOut"></section></div>
+<main id="app"></main>
+
+<aside id="cart" class="cart"><div class="cartHead"><h2>Your Bag</h2><button onclick="closeCart()">✕</button></div><div id="cartList"></div><div class="cartBottom"><div class="line"><span>Subtotal</span><strong id="subtotal">₹0</strong></div><div class="line muted"><span>Shipping</span><span id="shipping">Calculated at checkout</span></div><a href="#/checkout" onclick="closeCart()" class="btn dark full">CHECKOUT</a></div></aside><div id="shade" class="shade" onclick="closeCart();closeSearch()"></div>
+
+<footer><div class="footGrid"><div><div class="logo white">MUNN</div><p>Thoughtfully curated skincare from trusted beauty brands. Simple choices, authentic products, better routines.</p><a class="wa" href="https://wa.me/919999999999" target="_blank">WhatsApp us →</a></div><div><h4>SHOP</h4><a href="#/shop">All Products</a><a href="#/shop?cat=Face">Face Care</a><a href="#/shop?cat=Sunscreen">Sunscreen</a><a href="#/shop?cat=Body">Body Care</a></div><div><h4>HELP</h4><a href="#/contact">Contact</a><a href="#/shipping">Shipping</a><a href="#/returns">Returns</a><a href="#/track">Track Order</a></div><div><h4>LEGAL</h4><a href="#/privacy">Privacy</a><a href="#/terms">Terms</a><a href="#/refund">Refund Policy</a><a href="#/disclaimer">Disclaimer</a></div></div><div class="copy">© 2026 MUNN. All rights reserved. Replace placeholder contact/business details before launch.</div></footer>
+<script src="app.js"></script>
+</body></html>
